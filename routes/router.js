@@ -6,6 +6,9 @@ const router = express();
 router.get('/', (req, res)=>{
     res.render('home', { pagename: 'Home'});
 });
+router.get('/about', (req, res)=>{
+    res.render('about', { pagename: 'About'});
+});
 
 router.get('/login', (req, res)=>{
     res.render('login', { pagename: 'Login'});
